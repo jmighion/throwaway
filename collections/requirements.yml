@@ -1,0 +1,5 @@
+collections:
+#  - ansible.controller  << This collection does not work with AAP 2.4
+  - azure.azcollection
+  - community.crypto
+  - ansible.controller
