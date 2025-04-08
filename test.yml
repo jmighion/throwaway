@@ -7,16 +7,16 @@
       ansible.builtin.command:
         cmd: ansible-galaxy collection list
 
-    - name: Check collection
-      ansible.controller.project:
-        organization: Default
-        name: "rhel setup"
-        credential: "admin cred"
-        scm_allow_override: true
-        scm_update_on_launch: true
-        scm_delete_on_update: true
-        scm_update_cache_timeout: 600
-        scm_url: "git@github.com:jmighion/rhel_setup.git"
-        scm_type: git
-        update_project: true
-        validate_certs: false
+    # - name: Check collection
+    #   ansible.controller.project:
+    #     organization: Default
+    #     name: "rhel setup"
+    #     credential: "admin cred"
+    #     scm_allow_override: true
+    #     scm_update_on_launch: true
+    #     scm_delete_on_update: true
+    #     scm_update_cache_timeout: 600
+    #     scm_url: "git@github.com:jmighion/rhel_setup.git"
+    #     scm_type: git
+    #     update_project: true
+    #     validate_certs: false
